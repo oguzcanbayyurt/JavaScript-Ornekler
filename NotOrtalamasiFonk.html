@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript" language="javascript">
+function hesapla()
+{
+	var not1 = form1.notunuz1.value
+	var not2 = form1.notunuz2.value
+	var not3 = form1.notunuz3.value
+	var toplam = Number(not1) + Number(not2) +N umber(not3)
+	var ort = toplam / 3
+	document.write(ort)
+}
+</script>
+</head>
+<body>
+<form name="form1">
+Not1<input type="text" name="notunuz1"><br>
+Not2<input type="text" name="notunuz2"><br>
+Not3<input type="text" name="notunuz3"><br>
+<input type="button" value="Hesapla" onclick="hesapla()">
+</form>
+</body>
+</html>
+
