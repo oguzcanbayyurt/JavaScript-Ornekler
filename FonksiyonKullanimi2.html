@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" language="javascript">
+function goster()
+{
+	var sayi=form1.sayiniz.value
+	if(sayi<0)
+	{
+		document.writeln("Girilen Sayý Negatif");
+	}
+	else if(sayi>0)
+	{
+	document.writeln("Girilen Sayý Pozitif");
+	}
+	else
+	{
+	document.writeln("Girilen Sayý 0");
+	}
+}
+</script>
+</head>
+<body>
+<form name="form1">
+Bir Sayý Giriniz<input type="text" name="sayiniz">
+<input type="button" onclick="goster()" value="gonder">
+</form>
+</body>
+</html>
+
