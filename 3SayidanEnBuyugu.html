@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript" language="javascript">
+function goster()
+{
+	var sayi1 = form1.sayiniz1.value
+	var sayi2 = form1.sayiniz2.value
+	var sayi3 = form1.sayiniz3.value
+	if(sayi1 < sayi2 && sayi1 < sayi3)
+	{
+		document.writeln("1. Sayý En Küçüðü");
+	}
+	else if(sayi2 < sayi1 && sayi2 < sayi3)
+	{
+		document.writeln("2. Sayý En Küçüðü");
+	}
+	else if(sayi3 < sayi1 && sayi3 < sayi2)
+	{
+		document.writeln("3. Sayý En Küçüðü");
+	}
+	else
+	{
+		document.writeln("Hatalý Girdiniz");
+	}
+}
+</script>
+</head>
+<body>
+<form name="form1">
+1. Sayýyý Giriniz<input type="text" name="sayiniz1"><br>
+2. Sayýyý Giriniz<input type="text" name="sayiniz2"><br>
+3. Sayýyý Giriniz<input type="text" name="sayiniz3"><br>
+<input type="button" onclick="goster()" value="gonder">
+</form>
+</body>
+</html>
+
